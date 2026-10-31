@@ -1,11 +1,40 @@
+:root {
+  --nat-navbar-bg: #ececee;
+  --nat-navbar-bg-rgb: 150, 150, 200;
+  --nat-navbar-text-color: white;
+  --nat-navbar-highlight-text: pink;
+  --nat-navbar-text-color: white;
+  --nat-navbar-bg: pink;
+}
+
 html,
 body {
-  --bs-light-rgb: 236, 236, 236;
+  --bs-dark: var(--nat-navbar-bg);
+  --bs-dark-rgb: var(--nat-navbar-bg-rgb);
   box-sizing: border-box;
   height: 100%;
   padding: 0;
   margin: 0;
+  background: fixed center url('/pink-background.jpg');
+  background-size: cover;
 }
+
+body .navbar {
+  --bs-navbar-active-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--nat-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--nat-navbar-highlight-text);
+  --bs-navbar-color: var(--nat-navbar-text-color);
+  --bs-navbar-hover-color: var(--nat-navbar-highlight-text);
+}
+
+.bg-dark a.dropdown-item {
+  color: var(--nat-navbar-bg);
+}
+
+footer, footer a {
+  color: var(--nat-navbar-text-color);
+}
+
 .wrapper {
   box-sizing: border-box;
   min-height: 100%;
