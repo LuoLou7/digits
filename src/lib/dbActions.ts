@@ -32,6 +32,16 @@ export async function addStuff(stuff: { name: string; quantity: number; owner: s
   redirect('/list');
 }
 
+export async function addNote(note: {note: string, owner: string, contactId: number}) {
+  await prisma.note.create({
+    data: {
+      note: note.note,
+      owner: note.owner,
+      contactId: note.contactId,
+    }
+  })
+}
+
 // creates a new contact in the database
 // @param contact
 export async function addContact(contact: { 
