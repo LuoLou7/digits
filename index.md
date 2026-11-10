@@ -50,3 +50,5 @@ Users can also change their password by clicking on their email at the top right
 ### Admin Page
 
 Admins has an additional feature in the website. In the navbar there is an Admin page where there are a different list of contacts only available to admins. 
+
+![](doc/Admin_page.png)
